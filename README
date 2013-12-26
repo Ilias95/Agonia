@@ -1,0 +1,29 @@
+Agonia
+=======
+
+A CLI implementation of Agonia, a card game well known in Greece.
+
+Game rules
+-----------
+Initially 7 cards are dealt to each player and one card stays down. Players
+must play one card on their turn. A card can be played if it has the same number
+or same suit with the down card. If a player cannot play a card, he should pull
+one from the deck and if he still can't play, he folds. Winner is the one to
+get rid of all of his cards first.
+
+Special cards:
+
+-A : The player that played an Ace chooses the suit of the down card.
+     Aces can be played at any state of the game independently of the down card.
+-8 : When one played, the opponent looses his turn.
+-7 : When one played, the opponent has to pull 2 cards from the deck.
+     If opponent also has a 7, first player will pull 4 cards (or 6, 8 for any 7 on 7).
+
+Requirements
+------------
+You only need the Java Runtime Environment (JRE) and the Make tool.
+
+Compile & Run
+--------------
+Just type `make' to compile the program and `make run' to run it.
+You can remove the class files from the source code directory by typing `make clean'.
